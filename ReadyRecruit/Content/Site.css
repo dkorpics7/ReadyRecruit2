@@ -1,0 +1,213 @@
+﻿body {
+    padding-top: 45px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+/*NAVBAR*/
+
+.navbar-collapse {
+    /*border-bottom:10px solid red;
+    border-width: 0px 0px 5px;*/
+    border-bottom:40px,solid;
+    border-bottom-color:blue;
+    border-width:0px,0px,5px;
+    border-top:0px;
+}
+
+.navbar-brand, .navbar-fixed-top a {
+    color: red;
+}
+.navbar-right {
+    padding-right:2vw;
+}
+
+.nav li {
+    font-size: 12px;
+}
+
+#Home img {
+    height: 30px;
+    width: 30px;
+    margin-left:10px;
+}
+
+.navbar.navbar-fixed-top {
+    /*background-image: url('images/Bald-Eagle-banner-1383.jpg');*/
+    background: lightyellow;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 45px;
+}
+
+.outline {
+    background-color: rgbA(0, 0, 0, 0.8);
+    color: gold;
+    min-height:90vh;
+}
+
+div.rightcolumn {
+    background-color: gold;
+    color: black;
+    min-height:90vh;
+}
+.selections {
+    text-align:center;
+    padding-bottom:10px;
+    color:gold;
+}
+.selections a {
+    color:gold;
+}
+.selections hr {
+    padding-top:0px;
+    padding-bottom:0px;
+}
+
+.rightcolumn .row {
+    padding: 20px 20px 20px 20px;
+}
+div.pic {
+    background-image: url('images/iwojima.jpg');
+    background-size: 33.3vw;
+    display: block;
+    height: 55vh;
+}
+section#homepage .row {
+    width: 100vw;
+}
+div.video {
+    background-image: url('images/iwojima.jpg');
+    background-size: 100% 100%;
+    /*display: block;*/
+    min-height:65vh;
+    padding:0px 0px 0px 0px;
+}
+
+div.jumbotron {
+    background-image: url('images/iwojima.jpg');
+    background-size: 100vw 50vh;
+    min-height:45vh;
+    margin-bottom: 0px;
+}
+
+div.bottom {
+    padding-top:15px;
+    min-height:50vh;
+}
+section#Step1 {
+    min-height: 100vh;
+}
+section#Step2, section#Step3 {
+    padding-top:45px;
+    min-height:100vh;
+}
+
+h1 {
+    text-shadow: 3px 3px 3px tomato;
+    font-weight:600;
+}
+.outline h1 {
+    text-align:center;
+}
+
+.outline h2 {
+    padding-left:5vw;
+    text-wrap:avoid;
+}
+
+.outline h3 {
+    padding-left:10vw;
+}
+.glyphicon-check, .glyphicon-unchecked {
+    font-size: 0.5em;
+    top: -3px;
+    color: tomato;
+}
+div.row.bar {
+    padding: 0px 0px 0px 0px;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    color: black;
+}
+
+.progress-bar-warning {
+    background-color:tomato;
+    padding-left:10px;
+    padding-top:12px;
+}
+div.progress-bar-striped {
+    min-height:50px;
+    width: 100%;
+    height:100%;
+}
+
+hr {
+    border-top: 1px solid tomato;
+}
+
+
+section#viewProfile {
+background-color: rgbA(0,0,0,1.0);
+color:gold;
+font-size:24px;
+text-align:center;
+padding: 30px 20px 20px 20px;
+margin: auto;
+min-height:90vh;
+}
+section#viewProfile p {
+    padding: 5vh 15vw 10vh 15vw;
+}
+.profileData {
+    font-weight: 900;
+    color:tomato;
+}
+.ViewProfileSelections a {
+    color:gold;
+    font-size:14px;
+}
+.container {
+    margin: 0px 0px 0px 0px;
+    width:98vw;
+    padding:0px 0px 0px 0px;
+}
+.btn.btn-default {
+    background: gold;
+    border: 2px solid tomato;
+}
+.btn.btn-default a {
+    color:black;
+}
+div.nextprev {
+    font-size:18px;
+    color:black;
+}
+div.nextprev .right {
+    float:right;
+}
+div.nextprev .glyphicon {
+    padding-left:5px;
+    padding-left:5px;
+}

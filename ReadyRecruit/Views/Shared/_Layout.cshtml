@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Ready Recruit</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="navbar navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a id="Home" class="navbar-brand" href="~/Home/Index"><span><img src="~/Content/images/Ready R. Logo! -Stars and stripes!_clipped_rev_1.png" /></span></a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @*@Html.ActionLink("Ready Recruit", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    @*<li>@Html.ActionLink("Home", "Index", "Home")</li>*@
+                    <li>@Html.ActionLink("Profile", "Index", "Profiles")</li>
+                    <li>@Html.ActionLink("Link", "Index", "Links")</li>
+                    <li>@Html.ActionLink("Roadmap", "Index", "Roadmaps")</li>
+                    <li>@Html.ActionLink("Mainstep", "Index", "Mainsteps")</li>
+                    <li>@Html.ActionLink("Headstep", "Index", "Headsteps")</li>
+                    <li>@Html.ActionLink("Substep", "Index", "Substeps")</li>
+                    @*<li>@Html.ActionLink("Education", "Index", "Educations")</li>
+                    <li>@Html.ActionLink("Gender", "Index", "Genders")</li>
+                    <li>@Html.ActionLink("Marital", "Index", "MaritalStats")</li>*@
+                    @*<li>@Html.ActionLink("PriorService", "Index", "PriorServices")</li>*@
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
